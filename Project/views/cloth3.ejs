@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Header section-->
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img id="MDB-logo"
+                        src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo"
+                        draggable="false" height="30" /></a>
+
+                <form action="/" method="post">
+                    <input class="form-control login" style="width: 500px;" name="search" type="text"
+                        placeholder="Search by category" aria-label="Search">
+                </form>
+
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center me-3" href="/cart">
+                            <i class="fas fa-cart-arrow-down pe-2"></i>
+                        </a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Login</button>
+                        <div class="dropdown-content">
+                            <a href="register.html">Login as Customer</a>
+                            <a href="logintrader.html">Login as trader</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="fruits.html">FRUITS & VEGETABLES</a> </li>
+                        <li><a href="dairys.html">DAIRY & BAKERY</a></li>
+                        <li><a href="staples.html">STAPLES</a></li>
+                        <li><a href="mens.html">MENS & WOMENS</a></li>
+                        <li><a href="cloths.html">BOYS & GIRLS</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+
+        </section>
+    </div>
+
+        <!--Banner Image Style-->
+        <!-- <div class="image-div"></div> -->
+    <div class="container">
+        <div class="image">
+            <img src="Pimages/cloth3.jpg" height="400px">
+        </div>
+        <div class="desc">
+            <h1>
+                <p>White T-shirt for Small Girls
+            </h1>
+            <p>Description : Classic white colour with <br>their favourite pet cat's sticker mainly for summer wear</p>
+
+            <!-- <h3>
+                <p>Select size:
+                    <select id="Size" name="cloth">
+                        <option value="">Small</option>
+                        <option value="Football">Medium</option>
+                        <option value="Volleyball">Large</option>
+                        <option value="Badminton">Extra-Large</option>
+                    </select>
+                </p>
+            </h3> -->
+            <form action="/cart">
+                        <button type="submit" id="buy" class="btn btn-info"
+                            style="margin: auto; padding-left: 5%;padding-right: 5%;">Buy At $<%=da.price%></button>
+                    </form>
+            <h5 id="disc">
+                <h4>Disclaimer:</h4>Despite our attempts to provide you with the most accurate information<br> possible, the actual packaging, ingredients and colour of the product <br>may sometimes vary. Please read the label, directions and warnings
+                carefully <br>before use.
+            </h5>
+        </div>
+    </div>
+    <script>
+    function buy() {
+        document.getElementById("buy").addEventListener("click", () => {
+            console.log("dssdjfhjk")
+            fetch('/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    items: [
+                        { id: 1, quantity: 1 }
+                    ],
+                }),
+            })
+                .then(res => {
+                    if (res.ok) return res.json()
+                    return res.json().then(json => Promise.reject(json))
+                })
+                .then(({ url }) => {
+                    // console.log(url)
+                    window.location = url
+                    // console.log(url);
+                })
+                .catch(err => {
+                    console.error(err.error)
+                })
+        })
+    }
+</script>
+</body>
+
+</html>

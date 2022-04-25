@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper-Restrict Customer</title>
+    <script>
+ 
+
+      
+    </script>
+</head>
+
+<body>
+
+
+<h1 style="color:rgb(65,211,3)"><%= title %></h1>
+    <div class="loginbox">
+        <h2>As Admin</h2>
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuDqUTS4HXWsEtj85wf7gogGc2m7m8c11jQ&usqp=CAU" class="avtar"> -->
+    
+                
+                <form id="RegForm" action="/restrict" method="post">
+                    <p>Admin ID</p>
+                    <input type="text" name="name" placeholder="Enter your Admin ID">
+                    <p>E-mail to be Restricted</p>
+                    <input type="e-mail" name="email" placeholder="Enter the Email to Restrict" id="Email2">
+                    <p>Admin Password</p>
+                    <input type="password" name="password" placeholder="Enter your Password"><br>
+                    <p>Status</p>
+                    <input type="text" name="mobile" placeholder="Enter Number Other than 1">
+                   
+                    <input type="submit" name="" value="Submit">
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            #wrap{
+                background-image: radial-gradient(red,blue);
+                text-align: center;
+                padding-left: 21px;
+                padding-top: 21px;
+                padding-bottom: 50px;
+                border: 3px solid rgba(1, 1, 24, 0.897);
+                border-radius: 45px;
+                margin-left:400px;
+                margin-right: 400px;
+            }
+            body{  
+                background-image: linear-gradient(green,yellow);    
+                font-size:large;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            select{
+                font-size:large;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Registration form</h2>
+        <div id="wrap" class="container">
+        <form>
+            <div class="row">
+                <div class="col-sm-4">
+        <div>
+        <label for="Uname">Username</label>
+        <input type="text" id="Uname" name="gname" placeholder="Give ur username">
+        </div>
+        <div>
+        Password  <input type="Password" name="Name">
+        </div>
+        <div>
+        Name of City <input type="text" placeholder="City"><br>
+        </div>
+        <div>
+            
+        Please specify your role :<br>
+        <label for="Engineer">Engineer</label>
+        <input type="radio" name="hjh" id="Engineer"><br>
+        <label for="Doctor">Doctor</label>
+        <input type="radio" name="hjh" id="Doctor"><br>
+        <label for="CA">Chartered Accountant</label>
+        <input type="radio" name="hjh" id="CA"><br>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div>
+        <label for="Date">select DOB</label>
+        <input type="date" name="hjk" id="Date"><br>
+        </div>
+        <div>
+        <label for="Sport">Select your favourite Sport</label>
+        <select id="Sport" name="sport">
+            <option >Cricket</option>
+            <option value="Football">Football</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Badminton">Badminton</option>
+        </select>
+        </div>
+        <div>
+            <label for="description">Describe yourself:</label><br>
+            <textarea name="intro" id="description" rows="15" cols="20" placeholder="write something"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="hk" name="hk1">
+            <label for="hk">I agree to all terms and conditions</label>
+        </div>
+        <input type="submit" value="Submit Now">
+    </div>
+    </div>
+    </form>
+</div>
+    </body>
+</html>

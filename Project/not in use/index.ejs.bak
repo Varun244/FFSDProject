@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Elements added to the body -->
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <title>Shopper-The Shopping Friendly App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- Header section-->
+    <section class="header">
+        <div class="head-style" width=100% height=10%>
+            <img class="div-img " src="images/logo2.png" style="padding-left:0%;padding-right:0%;margin-left:0%;padding-top:0%;margin-top:0%;margin-right:0%;width:70%;height:120px;"> 
+<form action="/" method="post">
+            <input class="form-control my-0 py-1 amber-border login" style="margin-left:0%;margin-right:0%;padding-left:0%;padding-right:0%;width:110%" name="search" type="text" placeholder="Search by category" aria-label="Search">
+</form>
+<a href="signUpPage.html"> <button type="button" id="btnn" class="btn btn-primary login"><%= name %></button>
+           </a>
+        </div>
+
+
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="fruits.html">FRUITS & VEGETABLES</a> </li>
+                    <li><a href="dairys.html">DAIRY & BAKERY</a></li>
+                    <li><a href="staples.html">STAPLES</a></li>
+                    <li><a href="mens.html">MENS & WOMENS</a></li>
+                    <li><a href="cloths.html">BOYS & GIRLS</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!--Banner Image Style-->
+        <div class="image-div"></div>
+
+    </section>
+
+    <!-- Fruits and Vegetables Section-->
+    <section class="dairy">
+        <h2 class="headsty">Fruits & Vegetables</h3>
+            <div class="row1">
+                <a href="fruit1.html">  <div class=dairy-col>
+                    <img src="images/fru1.jpg">
+                    <h3 style="text-align: center;">Apple</h3>
+                </div></a>
+                <a href="fruit2.html"> <div class=dairy-col>
+                    <img src="images/fru2.webp">
+                    <h3 style="text-align: center;">Mango</h3>
+                </div></a>
+                <a href="fruit3.html"> <div class=dairy-col>
+                    <img src="images/fru3.jpg">
+                    <h3 style="text-align: center;">Sapodilla</h3>
+                </div></a>
+                <a href="fruit4.html"> <div class=dairy-col>
+                    <img src="images/fru4.jpg">
+                    <h3 style="text-align: center;">Pomegranate</h3>
+                </div></a>
+            </div>
+
+            <div class="row1">
+                <a href="fruit5.html">             <div class=dairy-col>
+                    <img src="images/fru5.jpg">
+                    <h3 style="text-align: center;">Grapes</h3>
+                </div></a>
+                <a href="fruit6.html"> <div class=dairy-col>
+                    <img src="images/fru6.jpg">
+                    <h3 style="text-align: center;">Banana</h3>
+                </div></a>
+                <a href="fruit7.html"> <div class=dairy-col>
+                    <img src="images/fru7.jpg">
+                    <h3 style="text-align: center;">Pineapple</h3>
+                </div></a>
+                <a href="fruit8.html"> <div class=dairy-col>
+                    <img src="images/fru8.webp">
+                    <h3 style="text-align: center;">Kiwi</h3>
+                </div></a>
+            </div>
+
+
+    </section>
+
+
+
+    <!-- Clothings Section-->
+    <section class="clothings">
+        <h1>Clothings</h1>
+        <p>
+            Wide Range of clothings Reachable in Almost Every city Of India.
+        </p>
+        <div class="row">
+            <a href="mens.html">   <div class="clothings-col">
+                <img src="images/clot2.jpg">
+                <div class="layer">
+                    <h3>MENS</h3>
+                </div>
+
+            </div></a>
+
+            <a href="mens.html"><div class="clothings-col">
+                <img src="images/cat3.jpg">
+                <div class="layer">
+                    <h3>WOMENS</h3>
+                </div>
+
+            </div></a>
+
+            <a href="cloths.html"><div class="clothings-col">
+                <img src="images/clot4.jpg">
+                <div class="layer">
+                    <h3>KIDS</h3>
+                </div>
+
+            </div></a>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- Bakery section-->
+    <section class="dairy">
+        <h1>Dairy and Products</h1>
+        <p>Dairy and Bakery products from your nearly available shops</p>
+        <div class="row1">
+            <a href="dairys.html"> <div class=dairy-col>
+                <img src="images/milk1.webp">
+                <h3>Milk Products</h3>
+                <p>Milk,Butter,Cheese everything from pure grocery Shops near to you at low cost</p>
+            </div></a>
+            <a href="dairys.html">  <div class=dairy-col>
+                <img src="images/milk2.jpg">
+                <h3>Egg Products</h3>
+                <p>Milk,Butter,Cheese everything from pure grocery Shops near to you at low cost</p>
+            </div></a>
+            <a href="dairys.html">   <div class=dairy-col>
+                <img src="images/milk4.jpg">
+                <h3>Snacks</h3>
+                <p>Milk,Butter,Cheese everything from pure grocery Shops near to you at low cost</p>
+            </div></a>
+            <a href="dairys.html"><div class=dairy-col>
+                <img src="images/milk3.jpg">
+                <h3>Bakery</h3>
+                <p>Milk,Butter,Cheese everything from pure grocery Shops near to you at low cost</p>
+            </div></a>
+        </div>
+    </section>
+
+
+    <section class="feedback">
+        <h1>What Our Customer Says</h1>
+        <div class="outer-div">
+
+            <div class="feedback-col">
+                <img src="images/cust1.jpeg">
+                <div>
+                    <h3>Shivam khatri</h3>
+                    <p>India's most convenient online grocery channel.Shopper's Fresh and Smart makes your grocery shopping even sim</p>
+
+
+                </div>
+            </div>
+            <div class="feedback-col">
+                <img src="images/cust2.jpg">
+                <div>
+                    <h3> Neha Singh</h3>
+                    <p>India's most convenient online grocery channel.Shopper's Fresh and Smart makes your grocery shopping even sim</p>
+
+
+                </div>
+            </div>
+            <div class="feedback-col">
+                <img src="images/cust3.jpg">
+                <div>
+                    <h3>Mohit Singla</h3>
+                    <p>India's most convenient online grocery channel.Shopper's Fresh and Smart makes your grocery shopping even sim</p>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--- Call to Action -->
+    <section class="cta">
+        <h1>Register Now for the Better<br>Anywhere in India </h1>
+     <a href="signUpPage.html">   <button type="button" class="btn btn-primary" id="btn-st1">START MY EXPERIENCE</button>
+     </a>
+
+    </section>
+
+
+
+    <!-- Footer for the About Us Section -->
+    <section class="footer">
+        <h2>About Us</h2>
+        <p style="color: black;">
+            India's most convenient online grocery channel<br> Shopper's Fresh and Smart makes your grocery shopping even simpler. No more <br>hassles of sweating it out in crowded markets, grocery shops & supermarkets - now shop<br> from the comfort
+            of your home; office or on the move. We offer you convenience<br> of shopping everything that you need for your home - be it fresh fruits & vegetables, rice, dals,<br> oil, packaged food, dairy item, frozen, pet food, household cleaning items
+            & personal care<br> products from a single virtual store.
+        </p>
+
+
+
+    </section>
+
+</body>
+
+</html>

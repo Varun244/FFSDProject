@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Email validation</title>
+    <script>
+        function validate() {
+            var mail = document.getElementById("text").value;
+            if (mail.includes('@'))
+                document.getElementById("text").value = "Wrong input";
+        }
+    </script>
+
+
+</head>
+<form onclick="validate()">
+    <input type="text" placeholder="Email" id="text"><br><br>
+    <button type="button" name="submit" id="submit">Submit</button>
+
+
+</form>
+
+</html>
